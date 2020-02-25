@@ -333,42 +333,6 @@ img {
 
 /* Header Area CSS */
 
-/*.modal{
-  position: absolute;
-  top:0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal-body{
-  background-color: white;
-  color: black;
-  position:relative;
-  overflow-y:auto;
-  max-height:400px;
-  max-width: 60%;
-  padding:15px 30px;
-}
-.modal-header{
-  padding:9px 15px;
-  border-bottom:1px solid #eee;
-}
-  .close{
-    position: sticky;
-    right:0;
-    top:0;
-    justify-content: flex-end;
-    display: flex;
-    margin-right: -1rem;
-    margin-top: -0.5rem;
-    cursor: pointer;
-  }
-.modal-header h3{
-  margin:0;
-  text-align: center;
-}*/
 .header-area {
   position: relative;
   z-index: 1000;
@@ -599,57 +563,6 @@ img {
         .single-slide .blog-content p {
           font-size: 12px; } }
 
-/* :: 6.0 Games Area CSS */
-.single-games-area {
-  position: relative;
-  z-index: 1; }
-  .single-games-area::after {
-    content: '';
-    width: 2px;
-    height: 100%;
-    background-color: #cdcdcd;
-    top: 0;
-    right: -6.5px;
-    position: absolute;
-    z-index: 1; }
-    @media only screen and (max-width: 767px) {
-      .single-games-area::after {
-        display: none; } }
-  .single-games-area img {
-    max-height: 55px;
-    margin: 0 auto;
-    display: block; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .single-games-area img {
-        max-height: 40px; } }
-    @media only screen and (max-width: 767px) {
-      .single-games-area img {
-        max-height: 40px; } }
-
-.games-area {
-  position: relative;
-  z-index: 1; }
-  .games-area .col-12:last-child .single-games-area:after {
-    display: none; }
-
-.pagination .page-item .page-link {
-  background-color: transparent;
-  font-size: 16px;
-  color: #424242;
-  text-transform: uppercase;
-  text-align: center;
-  display: inline-block;
-  border-radius: 0;
-  padding: 0;
-  margin-right: 10px;
-  border: none;
-  font-weight: 600; }
-  .pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
-    color: #009975;
-    box-shadow: none; }
-.pagination .page-item.active .page-link {
-  color: #009975; }
-
 /* :: 7.0 Footer Area CSS */
 .about-area {
   position: relative;
@@ -812,110 +725,6 @@ img {
   font-family: 'Open Sans',sans-serif;
 }
 
-.sidebar-area {
-  position: relative;
-  z-index: 1; }
-
-.single-widget-area {
-  position: relative;
-  z-index: 1; }
-  .single-widget-area .widget-title {
-    margin-bottom: 50px;
-    font-weight: 600; }
-  .single-widget-area.add-widget {
-    margin-bottom: 160px; }
-    .single-widget-area.add-widget .side-img {
-      position: absolute;
-      bottom: -80px;
-      z-index: 10;
-      width: 80%;
-      right: -40px; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .single-widget-area.add-widget .side-img {
-          right: -30px; } }
-      @media only screen and (max-width: 767px) {
-        .single-widget-area.add-widget .side-img {
-          right: 0; } }
-    .single-widget-area.add-widget img {
-      width: 100%; }
-  .single-widget-area.video-widget {
-    margin-bottom: 80px; }
-  .single-widget-area.post-widget .single-post-area {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 20px; }
-    .single-widget-area.post-widget .single-post-area:last-child {
-      margin-bottom: 0; }
-    .single-widget-area.post-widget .single-post-area .blog-thumbnail {
-      position: relative;
-      z-index: 1;
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 80px;
-      flex: 0 0 80px;
-      max-width: 80px;
-      width: 80px;
-      margin-right: 20px; }
-      .single-widget-area.post-widget .single-post-area .blog-thumbnail img {
-        width: 100%; }
-    .single-widget-area.post-widget .single-post-area .blog-content {
-      position: relative;
-      z-index: 1; }
-      .single-widget-area.post-widget .single-post-area .blog-content .contri-title {
-        display: block;
-        font-size: 16px;
-        margin-bottom: 10px;
-        -webkit-transition-duration: 500ms;
-        transition-duration: 500ms;
-        font-weight: 600; }
-        .single-widget-area.post-widget .single-post-area .blog-content .contri-title:hover, .single-widget-area.post-widget .single-post-area .blog-content .contri-title:focus {
-          color: #009975; }
-      .single-widget-area.post-widget .single-post-area .blog-content span {
-        display: block;
-        color: #747373;
-        font-size: 12px; }
-
-.left-right-pattern {
-  position: relative;
-  z-index: 6000; }
-  .left-right-pattern::after {
-    position: absolute;
-    width: 100%;
-    height: 2000px;
-    top: -500px;
-    left: 1110px;
-    content: '';
-    background-color: rgba(14, 14, 14, 0.8);
-    background-image: url(img/core-img/pattern.png);
-    z-index: 6000; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .left-right-pattern::after {
-        left: 930px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .left-right-pattern::after {
-        left: 690px; } }
-    @media only screen and (max-width: 767px) {
-      .left-right-pattern::after {
-        display: none; } }
-  .left-right-pattern::before {
-    position: absolute;
-    width: 100%;
-    height: 2000px;
-    top: -500px;
-    left: -1110px;
-    content: '';
-    background-color: rgba(14, 14, 14, 0.8);
-    background-image: url(img/core-img/pattern.png);
-    z-index: 6000; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .left-right-pattern::before {
-        left: -930px; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .left-right-pattern::before {
-        left: -690px; } }
-    @media only screen and (max-width: 767px) {
-      .left-right-pattern::before {
-        display: none; } }
-
 /* About CSS */
 .about-area {
   position: relative;
@@ -972,4 +781,16 @@ img {
     line-height: 1;
     margin-top: 15px; }
 
+/* ===== FAQ CSS ===== */
+
+.btn-background{
+  background-color:transparent;
+  border-color:transparent;
+  box-shadow:none;
+}
+.wrap-words{
+  white-space:normal;
+}
+
+/* ===== ENDS ===== */
 /* ====== The End ====== */

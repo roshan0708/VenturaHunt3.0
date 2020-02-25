@@ -419,42 +419,6 @@ img {
 
 /* :: 4.0 Header Area CSS */
 
-/*.modal{
-  position: absolute;
-  top:0;
-  height: ;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .modal-body{
-    position:relative;
-    overflow-y:auto;
-    max-height:400px;
-    max-width: 60%;
-    padding:15px 30px;
-    background-color: white;
-    color: black;
-    .modal-header{
-      padding:9px 15px;
-      border-bottom:1px solid #eee;
-      h3{
-        margin:0;
-        text-align: center;
-      }
-    }
-    .close{
-      position: sticky;
-      right:0;
-      top:0;
-      justify-content: flex-end;
-      display: flex;
-      margin-right: -1rem;
-      margin-top: -0.5rem;
-      cursor: pointer;
-    }
-  }
-}*/
 .header-area {
     position: relative;
     z-index: 1000;
@@ -683,73 +647,6 @@ img {
     }
 }
 
-/* :: 6.0 Games Area CSS */
-
-.single-games-area {
-    position: relative;
-    z-index: 1;
-    &::after {
-        content: '';
-        width: 2px;
-        height: 100%;
-        background-color: #cdcdcd;
-        top: 0;
-        right: -6.5px;
-        position: absolute;
-        z-index: 1;
-        @media #{$breakpoint-xs} {
-            display: none;
-        }
-    }
-    img {
-        max-height: 55px;
-        margin: 0 auto;
-        display: block;
-        @media #{$breakpoint-md} {
-            max-height: 40px;
-        }
-        @media #{$breakpoint-xs} {
-            max-height: 40px;
-        }
-    }
-}
-
-.games-area {
-    position: relative;
-    z-index: 1;
-    .col-12:last-child .single-games-area:after {
-        display: none;
-    }
-}
-
-.pagination {
-    .page-item {
-        .page-link {
-            background-color: transparent;
-            font-size: 16px;
-            color: $heading-color;
-            text-transform: uppercase;
-            text-align: center;
-            display: inline-block;
-            border-radius: 0;
-            padding: 0;
-            margin-right: 10px;
-            border: none;
-            font-weight: 600;
-            &:hover,
-            &:focus {
-                color: $hover-color;
-                box-shadow: none;
-            }
-        }
-        &.active {
-            .page-link {
-                color: $hover-color;
-            }
-        }
-    }
-}
-
 /* :: 7.0 Footer Area CSS */
 
 .about-area {
@@ -879,54 +776,6 @@ img {
         color: #fff;
     }
 }
-.sidebar-area {
-    position: relative;
-    z-index: 1;
-}
-.left-right-pattern {
-    position: relative;
-    z-index: 6000;
-    &::after {
-        position: absolute;
-        width: 100%;
-        height: 2000px;
-        top: -500px;
-        left: 1110px;
-        content: '';
-        background-color: rgba(14, 14, 14, 0.8);
-        background-image: url(img/core-img/pattern.png);
-        z-index: 6000;
-        @media #{$breakpoint-lg} {
-            left: 930px;
-        }
-        @media #{$breakpoint-md} {
-            left: 690px;
-        }
-        @media #{$breakpoint-xs} {
-            display: none;
-        }
-    }
-    &::before {
-        position: absolute;
-        width: 100%;
-        height: 2000px;
-        top: -500px;
-        left: -1110px;
-        content: '';
-        background-color: rgba(14, 14, 14, 0.8);
-        background-image: url(img/core-img/pattern.png);
-        z-index: 6000;
-        @media #{$breakpoint-lg} {
-            left: -930px;
-        }
-        @media #{$breakpoint-md} {
-            left: -690px;
-        }
-        @media #{$breakpoint-xs} {
-            display: none;
-        }
-    }
-}
 
 /* About CSS */
 
@@ -993,5 +842,18 @@ img {
         margin-top: 15px;
     }
 }
+
+/* ===== FAQ CSS ===== */
+
+.btn-background{
+  background-color:transparent;
+  border-color:transparent;
+  box-shadow:none;
+}
+.wrap-words{
+  white-space:normal;
+}
+
+/* ===== ENDS ===== */
 
 /* ====== The End ====== */
