@@ -1,8 +1,11 @@
 (function ($) {
     'use strict';
-
     var browserWindow = $(window);
-
+    
+    $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("active");
+    });
     // :: 1.0 Preloader Active Code
     browserWindow.on('load', function () {
         $('.preloader').fadeOut('slow', function () {
@@ -64,6 +67,7 @@
             $(this).css('animation-duration', anim_dur);
         });
     }
+
 
     // :: 6.0 ScrollUp Active Code
     if ($.fn.scrollUp) {
