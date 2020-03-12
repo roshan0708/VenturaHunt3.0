@@ -60,8 +60,8 @@
                   <li><a href="#" data-toggle="tooltip" data-placement="top" title="Home"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
                   <li><a href="#" data-toggle="tooltip" data-placement="top" title="Notifications"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
                   <li><a href="#" data-toggle="modal" data-target="#guidelineModal">Guidelines</a></li>
-                  <li><a href="#">Sign In</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
@@ -118,6 +118,55 @@
    </div>
  </div>
 </div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="guidelineModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <!--Header-->
+     <div class="modal-header">
+       <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">×</span>
+       </button>
+     </div>
+     <!--Body-->
+      <div class="modal-body" style="max-height:420px;position:relative;overflow-y:auto;">
+        <form name="signup">
+          <input type="text" class="form-control" name="name" placeholder="Name" style="margin: 10px 0px;">
+          <input type="text" class="form-control" name="institute" placeholder="Institute/College" style="margin: 10px 0px;">
+          <input type="text" class="form-control" name="username" placeholder="Username" style="margin: 10px 0px;">
+          <input type="password" class="form-control" name="password" placeholder="Password" style="margin: 10px 0px;">
+          <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password" style="margin: 10px 0px;">
+          <input type="text" class="form-control" name="contact" placeholder="Contact No." style="margin: 10px 0px;">
+          <button type="submit" name="submit" class="btn ventura-btn mt-15">Sign Up</button>
+        </form>
+      </div>
+   </div>
+ </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="guidelineModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <!--Header-->
+     <div class="modal-header">
+       <h4 class="modal-title" id="myModalLabel">Login</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">×</span>
+       </button>
+     </div>
+     <!--Body-->
+      <div class="modal-body" style="max-height:420px;position:relative;overflow-y:auto;">
+        <form name="login">
+          <input type="text" class="form-control" name="username" placeholder="Username" style="margin: 10px 0px;">
+          <input type="password" class="form-control" name="password" placeholder="Password" style="margin: 10px 0px;">
+          <button type="submit" name="submit" class="btn ventura-btn mt-15">Login</button>
+        </form>
+      </div>
+   </div>
+ </div>
+</div>
+
 
  <!-- End -->
 
