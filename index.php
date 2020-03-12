@@ -119,7 +119,7 @@
  </div>
 </div>
 
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="guidelineModalLabel" aria-hidden="true">
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
  <div class="modal-dialog" role="document">
    <div class="modal-content">
      <!--Header-->
@@ -145,7 +145,7 @@
  </div>
 </div>
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="guidelineModalLabel" aria-hidden="true">
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
  <div class="modal-dialog" role="document">
    <div class="modal-content">
      <!--Header-->
@@ -183,7 +183,7 @@
             <div class="col-12 col-lg-9">
               <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
                 <h2 data-animation="fadeInUp" data-delay="400ms">Let's Unravel the Mystery</h2>
-                <p><a href="#" class="btn ventura-btn mt-30" data-animation="fadeInUp" data-delay="700ms">Get Started</a></p>
+                <p><a href="#" class="btn ventura-btn mt-30" data-toggle="modal" data-target="#signupModal" data-animation="fadeInUp" data-delay="700ms">Get Started</a></p>
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@
   <!-- ##### Hero Area End ##### -->
 
   <!-- ##### About Area Start ##### -->
-  
+
   <div class="about-area about-area section-padding-50 bg-pattern2">
     <!-- Main about Area -->
     <div class="main-about-area section-padding-100-0">
